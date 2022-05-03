@@ -464,7 +464,7 @@ class ascii2d():
         self.num = num
         self.host = HOST_CUSTOM['ASCII'] or "https://ascii2d.net"
         self.header = "————>ascii2d<————"
-        self.scraper = cloudscraper.create_scraper()
+        self.scraper = cloudscraper.create_scraper(interpreter='js2py')
 
 
     async def get_search_data(self, url: str, data=None):
